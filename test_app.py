@@ -4,4 +4,4 @@ def test_home():
     res = app.test_client().get('/')
 
     assert res.status_code == 200
-    assert res.data == 'Hello World!'
+    assert res.data == b'Hello World!'
